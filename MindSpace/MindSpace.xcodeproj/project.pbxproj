@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23776DD1C8524A200FF04A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23776DC1C8524A200FF04A5 /* main.m */; };
+		C23776E01C8524A200FF04A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23776DF1C8524A200FF04A5 /* AppDelegate.m */; };
+		C23776E31C8524A200FF04A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23776E21C8524A200FF04A5 /* ViewController.m */; };
+		C23776E61C8524A200FF04A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23776E41C8524A200FF04A5 /* Main.storyboard */; };
+		C23776E81C8524A200FF04A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23776E71C8524A200FF04A5 /* Assets.xcassets */; };
+		C23776EB1C8524A200FF04A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23776E91C8524A200FF04A5 /* LaunchScreen.storyboard */; };
+		C2603AB01C85280300D7C240 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AAB1C85280300D7C240 /* RECommonFunctions.m */; };
+		C2603AB11C85280300D7C240 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AAD1C85280300D7C240 /* RESideMenu.m */; };
+		C2603AB21C85280300D7C240 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AAF1C85280300D7C240 /* UIViewController+RESideMenu.m */; };
+		C2603AB61C85284800D7C240 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AB41C85284800D7C240 /* HomeViewController.m */; };
+		C2603AB71C85284800D7C240 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2603AB51C85284800D7C240 /* HomeViewController.xib */; };
+		C2603ABA1C85286300D7C240 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AB91C85286300D7C240 /* LeftViewController.m */; };
+		C2603ABC1C852A5D00D7C240 /* fenlei.png in Resources */ = {isa = PBXBuildFile; fileRef = C2603ABB1C852A5D00D7C240 /* fenlei.png */; };
+		C2603AC11C852BAB00D7C240 /* WordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603ABF1C852BAB00D7C240 /* WordsViewController.m */; };
+		C2603AC21C852BAB00D7C240 /* WordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2603AC01C852BAB00D7C240 /* WordsViewController.xib */; };
+		C2603AC61C852BCD00D7C240 /* VoicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AC41C852BCD00D7C240 /* VoicesViewController.m */; };
+		C2603AC71C852BCD00D7C240 /* VoicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2603AC51C852BCD00D7C240 /* VoicesViewController.xib */; };
+		C2603AD01C852BF100D7C240 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603ACE1C852BF100D7C240 /* SearchViewController.m */; };
+		C2603AD11C852BF100D7C240 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2603ACF1C852BF100D7C240 /* SearchViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C23776D81C8524A200FF04A5 /* MindSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23776DC1C8524A200FF04A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23776DE1C8524A200FF04A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C23776DF1C8524A200FF04A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C23776E11C8524A200FF04A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C23776E21C8524A200FF04A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C23776E51C8524A200FF04A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C23776E71C8524A200FF04A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C23776EA1C8524A200FF04A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C23776EC1C8524A300FF04A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2603AAA1C85280300D7C240 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		C2603AAB1C85280300D7C240 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		C2603AAC1C85280300D7C240 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		C2603AAD1C85280300D7C240 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		C2603AAE1C85280300D7C240 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		C2603AAF1C85280300D7C240 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		C2603AB31C85284800D7C240 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C2603AB41C85284800D7C240 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C2603AB51C85284800D7C240 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C2603AB81C85286300D7C240 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		C2603AB91C85286300D7C240 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		C2603ABB1C852A5D00D7C240 /* fenlei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fenlei.png; sourceTree = "<group>"; };
+		C2603ABE1C852BAB00D7C240 /* WordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsViewController.h; sourceTree = "<group>"; };
+		C2603ABF1C852BAB00D7C240 /* WordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsViewController.m; sourceTree = "<group>"; };
+		C2603AC01C852BAB00D7C240 /* WordsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordsViewController.xib; sourceTree = "<group>"; };
+		C2603AC31C852BCD00D7C240 /* VoicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoicesViewController.h; sourceTree = "<group>"; };
+		C2603AC41C852BCD00D7C240 /* VoicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoicesViewController.m; sourceTree = "<group>"; };
+		C2603AC51C852BCD00D7C240 /* VoicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoicesViewController.xib; sourceTree = "<group>"; };
+		C2603ACD1C852BF100D7C240 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C2603ACE1C852BF100D7C240 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		C2603ACF1C852BF100D7C240 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23776D51C8524A200FF04A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23776CF1C8524A200FF04A5 = {
+			isa = PBXGroup;
+			children = (
+				C23776DA1C8524A200FF04A5 /* MindSpace */,
+				C23776D91C8524A200FF04A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23776D91C8524A200FF04A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23776D81C8524A200FF04A5 /* MindSpace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23776DA1C8524A200FF04A5 /* MindSpace */ = {
+			isa = PBXGroup;
+			children = (
+				C23776DE1C8524A200FF04A5 /* AppDelegate.h */,
+				C23776DF1C8524A200FF04A5 /* AppDelegate.m */,
+				C2603AA21C8527CC00D7C240 /* Classes */,
+				C23776E11C8524A200FF04A5 /* ViewController.h */,
+				C23776E21C8524A200FF04A5 /* ViewController.m */,
+				C23776E41C8524A200FF04A5 /* Main.storyboard */,
+				C2603ABB1C852A5D00D7C240 /* fenlei.png */,
+				C23776E71C8524A200FF04A5 /* Assets.xcassets */,
+				C23776E91C8524A200FF04A5 /* LaunchScreen.storyboard */,
+				C23776EC1C8524A300FF04A5 /* Info.plist */,
+				C23776DB1C8524A200FF04A5 /* Supporting Files */,
+			);
+			path = MindSpace;
+			sourceTree = "<group>";
+		};
+		C23776DB1C8524A200FF04A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23776DC1C8524A200FF04A5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2603AA21C8527CC00D7C240 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2603AA31C8527CC00D7C240 /* Headers */,
+				C2603AA41C8527CC00D7C240 /* Helps */,
+				C2603AA51C8527CC00D7C240 /* Model */,
+				C2603AA61C8527CC00D7C240 /* ThirdParties */,
+				C2603AA71C8527CC00D7C240 /* ViewControllers */,
+				C2603AA81C8527CC00D7C240 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C2603AA31C8527CC00D7C240 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C2603AA41C8527CC00D7C240 /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
+		C2603AA51C8527CC00D7C240 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2603AA61C8527CC00D7C240 /* ThirdParties */ = {
+			isa = PBXGroup;
+			children = (
+				C2603AA91C85280300D7C240 /* RESideMenu */,
+			);
+			path = ThirdParties;
+			sourceTree = "<group>";
+		};
+		C2603AA71C8527CC00D7C240 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2603AB31C85284800D7C240 /* HomeViewController.h */,
+				C2603AB41C85284800D7C240 /* HomeViewController.m */,
+				C2603AB51C85284800D7C240 /* HomeViewController.xib */,
+				C2603AB81C85286300D7C240 /* LeftViewController.h */,
+				C2603AB91C85286300D7C240 /* LeftViewController.m */,
+				C2603ABD1C852B7300D7C240 /* leftcontrolller */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C2603AA81C8527CC00D7C240 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2603AA91C85280300D7C240 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C2603AAA1C85280300D7C240 /* RECommonFunctions.h */,
+				C2603AAB1C85280300D7C240 /* RECommonFunctions.m */,
+				C2603AAC1C85280300D7C240 /* RESideMenu.h */,
+				C2603AAD1C85280300D7C240 /* RESideMenu.m */,
+				C2603AAE1C85280300D7C240 /* UIViewController+RESideMenu.h */,
+				C2603AAF1C85280300D7C240 /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		C2603ABD1C852B7300D7C240 /* leftcontrolller */ = {
+			isa = PBXGroup;
+			children = (
+				C2603ABE1C852BAB00D7C240 /* WordsViewController.h */,
+				C2603ABF1C852BAB00D7C240 /* WordsViewController.m */,
+				C2603AC01C852BAB00D7C240 /* WordsViewController.xib */,
+				C2603AC31C852BCD00D7C240 /* VoicesViewController.h */,
+				C2603AC41C852BCD00D7C240 /* VoicesViewController.m */,
+				C2603AC51C852BCD00D7C240 /* VoicesViewController.xib */,
+				C2603ACD1C852BF100D7C240 /* SearchViewController.h */,
+				C2603ACE1C852BF100D7C240 /* SearchViewController.m */,
+				C2603ACF1C852BF100D7C240 /* SearchViewController.xib */,
+			);
+			name = leftcontrolller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23776D71C8524A200FF04A5 /* MindSpace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23776EF1C8524A300FF04A5 /* Build configuration list for PBXNativeTarget "MindSpace" */;
+			buildPhases = (
+				C23776D41C8524A200FF04A5 /* Sources */,
+				C23776D51C8524A200FF04A5 /* Frameworks */,
+				C23776D61C8524A200FF04A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindSpace;
+			productName = MindSpace;
+			productReference = C23776D81C8524A200FF04A5 /* MindSpace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23776D01C8524A200FF04A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "侯彦栋，李金岩，徐未钱，姚行";
+				TargetAttributes = {
+					C23776D71C8524A200FF04A5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C23776D31C8524A200FF04A5 /* Build configuration list for PBXProject "MindSpace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C23776CF1C8524A200FF04A5;
+			productRefGroup = C23776D91C8524A200FF04A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23776D71C8524A200FF04A5 /* MindSpace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23776D61C8524A200FF04A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23776EB1C8524A200FF04A5 /* LaunchScreen.storyboard in Resources */,
+				C23776E81C8524A200FF04A5 /* Assets.xcassets in Resources */,
+				C2603ABC1C852A5D00D7C240 /* fenlei.png in Resources */,
+				C23776E61C8524A200FF04A5 /* Main.storyboard in Resources */,
+				C2603AC71C852BCD00D7C240 /* VoicesViewController.xib in Resources */,
+				C2603AD11C852BF100D7C240 /* SearchViewController.xib in Resources */,
+				C2603AC21C852BAB00D7C240 /* WordsViewController.xib in Resources */,
+				C2603AB71C85284800D7C240 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23776D41C8524A200FF04A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23776E31C8524A200FF04A5 /* ViewController.m in Sources */,
+				C2603ABA1C85286300D7C240 /* LeftViewController.m in Sources */,
+				C2603AC11C852BAB00D7C240 /* WordsViewController.m in Sources */,
+				C23776E01C8524A200FF04A5 /* AppDelegate.m in Sources */,
+				C23776DD1C8524A200FF04A5 /* main.m in Sources */,
+				C2603AC61C852BCD00D7C240 /* VoicesViewController.m in Sources */,
+				C2603AB11C85280300D7C240 /* RESideMenu.m in Sources */,
+				C2603AB01C85280300D7C240 /* RECommonFunctions.m in Sources */,
+				C2603AB61C85284800D7C240 /* HomeViewController.m in Sources */,
+				C2603AD01C852BF100D7C240 /* SearchViewController.m in Sources */,
+				C2603AB21C85280300D7C240 /* UIViewController+RESideMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C23776E41C8524A200FF04A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23776E51C8524A200FF04A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C23776E91C8524A200FF04A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23776EA1C8524A200FF04A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23776ED1C8524A300FF04A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C23776EE1C8524A300FF04A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23776F01C8524A300FF04A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindSpace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lanou3g.MindSpace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C23776F11C8524A300FF04A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MindSpace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lanou3g.MindSpace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23776D31C8524A200FF04A5 /* Build configuration list for PBXProject "MindSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23776ED1C8524A300FF04A5 /* Debug */,
+				C23776EE1C8524A300FF04A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23776EF1C8524A300FF04A5 /* Build configuration list for PBXNativeTarget "MindSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23776F01C8524A300FF04A5 /* Debug */,
+				C23776F11C8524A300FF04A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23776D01C8524A200FF04A5 /* Project object */;
+}
