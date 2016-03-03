@@ -34,13 +34,13 @@
 		C20F38CA1C86E2F400CB6E5C /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F38C01C86E2F400CB6E5C /* UIScrollView+MJExtension.m */; };
 		C20F38CB1C86E2F400CB6E5C /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F38C21C86E2F400CB6E5C /* UIScrollView+MJRefresh.m */; };
 		C20F38CC1C86E2F400CB6E5C /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F38C41C86E2F400CB6E5C /* UIView+MJExtension.m */; };
-		C20F38CF1C87077C00CB6E5C /* HomeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20F38CE1C87077C00CB6E5C /* HomeDetailController.m */; };
 		C23776DD1C8524A200FF04A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23776DC1C8524A200FF04A5 /* main.m */; };
 		C23776E01C8524A200FF04A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23776DF1C8524A200FF04A5 /* AppDelegate.m */; };
 		C23776E31C8524A200FF04A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23776E21C8524A200FF04A5 /* ViewController.m */; };
 		C23776E61C8524A200FF04A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23776E41C8524A200FF04A5 /* Main.storyboard */; };
 		C23776E81C8524A200FF04A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23776E71C8524A200FF04A5 /* Assets.xcassets */; };
 		C23776EB1C8524A200FF04A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23776E91C8524A200FF04A5 /* LaunchScreen.storyboard */; };
+		C25121031C87D10200350AE2 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25121021C87D10200350AE2 /* HomeDetailViewController.m */; };
 		C2603AB01C85280300D7C240 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AAB1C85280300D7C240 /* RECommonFunctions.m */; };
 		C2603AB11C85280300D7C240 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AAD1C85280300D7C240 /* RESideMenu.m */; };
 		C2603AB21C85280300D7C240 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C2603AAF1C85280300D7C240 /* UIViewController+RESideMenu.m */; };
@@ -110,8 +110,6 @@
 		C20F38C21C86E2F400CB6E5C /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		C20F38C31C86E2F400CB6E5C /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		C20F38C41C86E2F400CB6E5C /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		C20F38CD1C87077C00CB6E5C /* HomeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailController.h; sourceTree = "<group>"; };
-		C20F38CE1C87077C00CB6E5C /* HomeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailController.m; sourceTree = "<group>"; };
 		C23776D81C8524A200FF04A5 /* MindSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23776DC1C8524A200FF04A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C23776DE1C8524A200FF04A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +120,8 @@
 		C23776E71C8524A200FF04A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C23776EA1C8524A200FF04A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C23776EC1C8524A300FF04A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25121011C87D10200350AE2 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		C25121021C87D10200350AE2 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
 		C2603AAA1C85280300D7C240 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		C2603AAB1C85280300D7C240 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		C2603AAC1C85280300D7C240 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -319,8 +319,8 @@
 				C20F38621C859BC700CB6E5C /* HomeTableViewCell.h */,
 				C20F38631C859BC700CB6E5C /* HomeTableViewCell.m */,
 				C20F38641C859BC700CB6E5C /* HomeTableViewCell.xib */,
-				C20F38CD1C87077C00CB6E5C /* HomeDetailController.h */,
-				C20F38CE1C87077C00CB6E5C /* HomeDetailController.m */,
+				C25121011C87D10200350AE2 /* HomeDetailViewController.h */,
+				C25121021C87D10200350AE2 /* HomeDetailViewController.m */,
 				C2603AB81C85286300D7C240 /* LeftViewController.h */,
 				C2603AB91C85286300D7C240 /* LeftViewController.m */,
 				C2603ABD1C852B7300D7C240 /* leftcontrolller */,
@@ -449,7 +449,6 @@
 				C23776DD1C8524A200FF04A5 /* main.m in Sources */,
 				C20F38911C85C70700CB6E5C /* SDWebImageDownloaderOperation.m in Sources */,
 				C2603AC61C852BCD00D7C240 /* VoicesViewController.m in Sources */,
-				C20F38CF1C87077C00CB6E5C /* HomeDetailController.m in Sources */,
 				C20F388D1C85C70700CB6E5C /* SDImageCache.m in Sources */,
 				C20F38CB1C86E2F400CB6E5C /* UIScrollView+MJRefresh.m in Sources */,
 				C2603AB11C85280300D7C240 /* RESideMenu.m in Sources */,
@@ -465,6 +464,7 @@
 				C2603AB21C85280300D7C240 /* UIViewController+RESideMenu.m in Sources */,
 				C20F38951C85C70700CB6E5C /* UIImage+GIF.m in Sources */,
 				C20F386D1C85BAED00CB6E5C /* HomeModel.m in Sources */,
+				C25121031C87D10200350AE2 /* HomeDetailViewController.m in Sources */,
 				C20F38931C85C70700CB6E5C /* SDWebImagePrefetcher.m in Sources */,
 				C20F38C61C86E2F400CB6E5C /* MJRefreshBaseView.m in Sources */,
 				C20F38941C85C70700CB6E5C /* UIButton+WebCache.m in Sources */,
