@@ -6,8 +6,6 @@
 //  Copyright (c) 2013年 itcast. All rights reserved.
 //  上拉加载更多
 
-
-
 #import "MJRefreshFooterView.h"
 #import "MJRefreshConst.h"
 #import "UIView+MJExtension.h"
@@ -78,7 +76,7 @@
         // 调整frame
         [self adjustFrameWithContentSize];
     } else if ([MJRefreshContentOffset isEqualToString:keyPath]) {
-#warning 这个返回一定要放这个位置
+//#warning 这个返回一定要放这个位置
         // 如果正在刷新，直接返回
         if (self.state == MJRefreshStateRefreshing) return;
         
@@ -149,7 +147,7 @@
             }
             
             CGFloat deltaH = [self heightForContentBreakView];
-            int currentCount = [self totalDataCountInScrollView];
+            int currentCount = (int)[self totalDataCountInScrollView];
             // 刚刷新完毕
             if (MJRefreshStateRefreshing == oldState && deltaH > 0 && currentCount != self.lastRefreshCount) {
                 self.scrollView.mj_contentOffsetY = self.scrollView.mj_contentOffsetY;
@@ -168,7 +166,7 @@
         case MJRefreshStateRefreshing:
         {
             // 记录刷新前的数量
-            self.lastRefreshCount = [self totalDataCountInScrollView];
+            self.lastRefreshCount = (int)[self totalDataCountInScrollView];
             
             [UIView animateWithDuration:MJRefreshFastAnimationDuration animations:^{
                 CGFloat bottom = self.mj_height + self.scrollViewOriginalInset.bottom;
@@ -186,19 +184,19 @@
 	}
 }
 
-- (int)totalDataCountInScrollView
+- (NSInteger)totalDataCountInScrollView
 {
-    int totalCount = 0;
+    NSInteger totalCount = 0;
     if ([self.scrollView isKindOfClass:[UITableView class]]) {
         UITableView *tableView = (UITableView *)self.scrollView;
         
-        for (int section = 0; section<tableView.numberOfSections; section++) {
+        for (NSInteger section = 0; section<tableView.numberOfSections; section++) {
             totalCount += [tableView numberOfRowsInSection:section];
         }
     } else if ([self.scrollView isKindOfClass:[UICollectionView class]]) {
         UICollectionView *collectionView = (UICollectionView *)self.scrollView;
         
-        for (int section = 0; section<collectionView.numberOfSections; section++) {
+        for (NSInteger section = 0; section<collectionView.numberOfSections; section++) {
             totalCount += [collectionView numberOfItemsInSection:section];
         }
     }

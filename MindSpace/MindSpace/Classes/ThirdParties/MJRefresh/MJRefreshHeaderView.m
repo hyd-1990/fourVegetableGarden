@@ -6,8 +6,6 @@
 //  Copyright (c) 2013年 itcast. All rights reserved.
 //  下拉刷新
 
-
-
 #import "MJRefreshConst.h"
 #import "MJRefreshHeaderView.h"
 #import "UIView+MJExtension.h"
@@ -37,7 +35,11 @@
         [self addSubview:_lastUpdateTimeLabel = lastUpdateTimeLabel];
         
         // 2.加载时间
-        self.lastUpdateTime = [[NSUserDefaults standardUserDefaults] objectForKey:MJRefreshHeaderTimeKey];
+        if(self.dateKey){
+            self.lastUpdateTime = [[NSUserDefaults standardUserDefaults] objectForKey:self.dateKey];
+        } else {
+            self.lastUpdateTime = [[NSUserDefaults standardUserDefaults] objectForKey:MJRefreshHeaderTimeKey];
+        }
     }
     return _lastUpdateTimeLabel;
 }
@@ -91,7 +93,11 @@
     _lastUpdateTime = lastUpdateTime;
     
     // 1.归档
-    [[NSUserDefaults standardUserDefaults] setObject:lastUpdateTime forKey:MJRefreshHeaderTimeKey];
+    if(self.dateKey){
+        [[NSUserDefaults standardUserDefaults] setObject:lastUpdateTime forKey:self.dateKey];
+    }   else{
+        [[NSUserDefaults standardUserDefaults] setObject:lastUpdateTime forKey:MJRefreshHeaderTimeKey];
+    }
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     // 2.更新时间
@@ -105,7 +111,7 @@
     
     // 1.获得年月日
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSUInteger unitFlags = NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit |NSHourCalendarUnit |NSMinuteCalendarUnit;
+    NSUInteger unitFlags = NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitHour |NSCalendarUnitMinute;
     NSDateComponents *cmp1 = [calendar components:unitFlags fromDate:_lastUpdateTime];
     NSDateComponents *cmp2 = [calendar components:unitFlags fromDate:[NSDate date]];
     

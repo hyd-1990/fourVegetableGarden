@@ -6,8 +6,6 @@
 //  Copyright (c) 2013年 itcast. All rights reserved.
 //
 
-
-
 #import "MJRefreshBaseView.h"
 #import "MJRefreshConst.h"
 #import "UIView+MJExtension.h"
@@ -132,13 +130,12 @@
 }
 
 #pragma mark 开始刷新
-typedef void (*send_type)(void *, SEL, UIView *);
 - (void)beginRefreshing
 {
     if (self.state == MJRefreshStateRefreshing) {
         // 回调
         if ([self.beginRefreshingTaget respondsToSelector:self.beginRefreshingAction]) {
-            msgSend((__bridge void *)(self.beginRefreshingTaget), self.beginRefreshingAction, self);
+            msgSend(msgTarget(self.beginRefreshingTaget), self.beginRefreshingAction, self);
         }
         
         if (self.beginRefreshingCallback) {
@@ -150,7 +147,9 @@ typedef void (*send_type)(void *, SEL, UIView *);
         } else {
     #warning 不能调用set方法
             _state = MJRefreshStateWillRefreshing;
-            [super setNeedsDisplay];
+            
+#warning 为了保证在viewWillAppear等方法中也能刷新
+            [self setNeedsDisplay];
         }
     }
 }
@@ -211,11 +210,17 @@ typedef void (*send_type)(void *, SEL, UIView *);
     // 1.一样的就直接返回(暂时不返回)
     if (self.state == state) return;
     
-    // 2.根据状态执行不同的操作
+    // 2.旧状态
+    MJRefreshState oldState = self.state;
+    
+    // 3.存储状态
+    _state = state;
+    
+    // 4.根据状态执行不同的操作
     switch (state) {
 		case MJRefreshStateNormal: // 普通状态
         {
-            if (self.state == MJRefreshStateRefreshing) {
+            if (oldState == MJRefreshStateRefreshing) {
                 [UIView animateWithDuration:MJRefreshSlowAnimationDuration * 0.6 animations:^{
                     self.activityView.alpha = 0.0;
                 } completion:^(BOOL finished) {
@@ -225,10 +230,18 @@ typedef void (*send_type)(void *, SEL, UIView *);
                     // 恢复alpha
                     self.activityView.alpha = 1.0;
                 }];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJRefreshSlowAnimationDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJRefreshSlowAnimationDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ // 等头部回去
                     // 再次设置回normal
-                    _state = MJRefreshStatePulling;
-                    self.state = MJRefreshStateNormal;
+//                    _state = MJRefreshStatePulling;
+//                    self.state = MJRefreshStateNormal;
+                    // 显示箭头
+                    self.arrowImage.hidden = NO;
+                    
+                    // 停止转圈圈
+                    [self.activityView stopAnimating];
+                    
+                    // 设置文字
+                    [self settingLabelText];
                 });
                 // 直接返回
                 return;
@@ -254,7 +267,7 @@ typedef void (*send_type)(void *, SEL, UIView *);
             
             // 回调
             if ([self.beginRefreshingTaget respondsToSelector:self.beginRefreshingAction]) {
-                objc_msgSend(self.beginRefreshingTaget, self.beginRefreshingAction, self);
+                msgSend(msgTarget(self.beginRefreshingTaget), self.beginRefreshingAction, self);
             }
             
             if (self.beginRefreshingCallback) {
@@ -266,10 +279,7 @@ typedef void (*send_type)(void *, SEL, UIView *);
             break;
 	}
     
-    // 3.存储状态
-    _state = state;
-    
-    // 4.设置文字
+    // 5.设置文字
     [self settingLabelText];
 }
 @end

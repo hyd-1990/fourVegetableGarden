@@ -10,4 +10,6 @@
 
 @interface HomeDetailViewController : UIViewController
 @property(nonatomic, strong)NSString *text;
+
+@property(nonatomic, strong)NSString *titleText;
 @end

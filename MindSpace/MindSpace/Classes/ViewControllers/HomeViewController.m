@@ -13,7 +13,7 @@
 #import "HomeModel.h"
 #import "MJRefresh.h"
 #import "HomeDetailViewController.h"
-
+#import "RigrhtViewController.h"
 
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate,UIScrollViewDelegate>
@@ -93,10 +93,21 @@
     self.table.delegate = self;
     
     [self.table registerNib:[UINib nibWithNibName:@"HomeTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell_id"];
-    
-    [self makeData];
+   
     [self setupRefresh];
+    [self makeData];
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"2.png"] style:UIBarButtonItemStyleDone target:self action:@selector(rightAction)];
+    
     // Do any additional setup after loading the view.
+}
+- (void)rightAction{
+    RigrhtViewController *right = [[RigrhtViewController alloc]init];
+    
+    [UIView animateWithDuration:1 animations:^{
+        [self.navigationController pushViewController:right animated:YES];
+    }];
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -111,6 +122,9 @@
 
 
 - (void)setupRefresh {
+    
+    [self.table footerBeginRefreshing];
+    
     // 1.下拉刷新(进入刷新状态就会调用self的headerRereshing)
     [self.table addHeaderWithTarget:self action:@selector(headerRereshing)];
     //自动刷新（一进入程序就下拉刷新）
@@ -135,14 +149,14 @@
 - (void)headerRereshing
 {
     // 1刷新获取新数据
-//    [self makeData];
+//    [self makeData];  
     // 2.2秒后刷新表格UI
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 刷新表格
         [self.table reloadData];
         
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
-        [self.table footerEndRefreshing];
+        [self.table headerEndRefreshing];
     });
 }
 
@@ -222,6 +236,9 @@
     
     
     hdc.text = model.share;
+    
+    hdc.titleText = model.title;
+    
     [self.navigationController pushViewController:hdc animated:YES];
     
 }

@@ -1,5 +1,5 @@
 //
-//  HomeDetailController.h
+//  Sear3DViewController.h
 //  MindSpace
 //
 //  Created by lanou3g on 16/3/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeDetailController : UIViewController
-
+@interface Sear3DViewController : UIViewController
+@property (nonatomic, assign)NSInteger index;
 @end

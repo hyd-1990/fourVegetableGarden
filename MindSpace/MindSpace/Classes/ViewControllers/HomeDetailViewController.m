@@ -33,7 +33,8 @@
     
     self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 45)];
     self.label.backgroundColor = [UIColor whiteColor];
-    self.label.text = @"";
+    self.label.text = self.titleText;
+    self.label.textAlignment = NSTextAlignmentCenter;
     [self.webView addSubview:self.label];
     
     

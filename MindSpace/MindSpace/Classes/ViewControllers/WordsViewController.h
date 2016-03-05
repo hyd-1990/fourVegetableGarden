@@ -11,4 +11,10 @@
 
 @interface WordsViewController : UIViewController
 @property (nonatomic, assign)NSInteger path;
+
+//  记录每个tableView下拉更新的次数
+@property (nonatomic, assign)int NUM;
+//  接收一下每次更新后的URLString
+@property (nonatomic, copy) NSString *ChangedUrlString;
+
 @end

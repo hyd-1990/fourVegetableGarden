@@ -6,8 +6,6 @@
 //  Copyright (c) 2014年 itcast. All rights reserved.
 //
 
-
-
 #import "UIScrollView+MJExtension.h"
 
 @implementation UIScrollView (MJExtension)

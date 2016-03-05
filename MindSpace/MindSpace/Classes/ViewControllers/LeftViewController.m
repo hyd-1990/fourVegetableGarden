@@ -24,7 +24,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
     
-    _lefs = @[@"首页",@"文字",@"声音",@"影像",@"日历",@"搜索"];
+    _lefs = @[@"心灵空间",@"文字",@"声音",@"影像",@"日历",@"搜索"];
     _tableView = [[UITableView alloc] init];
     _tableView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.width - 64);
     _tableView.dataSource = self;
